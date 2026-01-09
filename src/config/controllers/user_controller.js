@@ -7,7 +7,7 @@ const createUser = async (req, res) => {
 
     // Basic validation
     if (!name || !email || age === undefined) {
-      return res.status(400).json({ message: "name, email, age are required" });
+      return res.status(400).json({ message: "name, email, age are must Required!" });
     }
 
     // Check duplicate email

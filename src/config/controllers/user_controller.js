@@ -13,7 +13,7 @@ const createUser = async (req, res) => {
     // Check duplicate email
     const exists = await User.findOne({ email });
     if (exists) {
-      return res.status(409).json({ message: "Email already exists" });
+      return res.status(409).json({ message: "Email already exists You need to use New !" });
     }
 
     const user = await User.create({ name, email, age });

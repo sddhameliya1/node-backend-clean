@@ -39,7 +39,7 @@ const getAllUsersPaginated = async (req, res) => {
 
     // 6) Response (clean & standard)
     return res.status(200).json({
-      message: "Users fetched",
+      message: "Users fetched Sucessfully!",
       meta: {
         page,
         limit,
